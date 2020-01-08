@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="s-ObmCZxckXkFy^KOG`H">rocketShip</variable><variable type="KIND_SpriteKind" id="%^EiKJ{M,ea|^tPS7$K0">Player</variable><variable type="KIND_SpriteKind" id="%V|`g17VwKr9NwfB6;/N">Projectile</variable><variable type="KIND_SpriteKind" id="ab:I7^64U=o1D19%?1WL">Food</variable><variable type="KIND_SpriteKind" id=".o!w(oOFe*^mb9p;:s/R">Enemy</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="s-ObmCZxckXkFy^KOG`H">rocketShip</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . 8 . . . . . . . . 
+. . . . . . 6 f 9 . . . . . . . 
+. . . . . 6 6 f 9 9 . . . . . . 
+. . . . . 6 6 f 9 9 . . . . . . 
+. . . . 8 6 6 8 f f 8 . . . . . 
+. . . . 8 6 6 8 8 8 8 . . . . . 
+. . . . 8 6 6 8 8 8 8 . . . . . 
+. . . . 8 6 6 8 8 8 8 . . . . . 
+. . . 8 8 6 6 8 8 8 8 8 . . . . 
+. . 8 8 8 6 6 8 8 8 8 8 8 . . . 
+. . . d d . c c c . d d . . . . 
+. . . 4 4 . 4 2 4 . 4 4 . . . . 
+. . . . . . . 4 . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="Sprite_blockCombine_set"><field name="property">Sprite.bottom@set</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="s-ObmCZxckXkFy^KOG`H">rocketShip</field></block></value><value name="value"><block type="scenescreenheight"/></value><next><block type="typescript_statement" editable="false"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="for (let index = 10; index &gt;= 0; index--) {" line1="    rocketShip.say(&quot;T MINUS &quot; + index + &quot; SECONDS&quot;)" line2="    pause(1000)" line3="}" numlines="4"></mutation><next><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="s-ObmCZxckXkFy^KOG`H">rocketShip</field></block></value><value name="text"><shadow type="text"><field name="TEXT">BLASTOFF!</field></shadow></value><next><block type="controls_repeat_ext"><value name="TIMES"><shadow type="math_whole_number"><field name="NUM">50</field></shadow></value><statement name="DO"><block type="device_pause"><value name="pause"><shadow type="timePicker"><field name="ms">100</field></shadow></value><next><block type="Sprite_blockCombine_change"><field name="property">Sprite.y@set</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="s-ObmCZxckXkFy^KOG`H">rocketShip</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">-5</field></shadow></value></block></next></block></statement></block></next></block></next></block></next></block></next></block></statement></block></xml>
